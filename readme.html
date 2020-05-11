@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+  <title>FEZ Cohort HTML, CSS, and JavaScript Challenge</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    
+    .container {
+      margin: 0 auto;
+      max-width: 1000px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="fez-cohort-html-css-and-javascript-challenge">FEZ Cohort HTML, CSS, and JavaScript Challenge</h1>
+    <p>Using the screenshots in the attached .zip file, recreate the layout (see <a href="#screenshot-desktop">mocks/desktop.png</a> and <a href="#screenshot-mobile">mocks/mobile.png</a>) and add some interactivity.</p>
+
+    <p>We've given you a headstart and created a bare-bones index.html page that you can use.</p>
+
+    <p>Please refrain from using any libraries or frameworks (e.g. Bootstrap, jQuery, React, etc.); we really want to see your code and problem-solving abilities!</p>
+
+    <h2 id="interactivity-">Interactivity</h2>
+
+    <h3 id="main-navigation-see-mocks-state-nav-png-">Main Navigation (see <a href="#screenshot-nav">mocks/state-nav.png</a>)</h3>
+    <img src="./mocks/state-nav-detail.png" alt="nav detail"/>
+    <p>When clicking on any of the three main navigation elements in the header:</p>
+    <ol>
+      <li>A sub-navigation menu list should appear instead of linking to a new page.</li>
+      <li>The sub-navigation menu should disappear when:<ul>
+        <li>Clicking the same navigation item.</li>
+        <li>Clicking another navigation item.</li>
+        <li>Clicking anywhere outside of the sub-navigation element.</li>
+      </ul>
+    </li>
+    <li>Only one sub-navigation should be open at a time.</li>
+    <li>
+      Use your imagination for the content of the other two sub-navigation menus, but if you need some help we used:
+      <ul>
+        <li>Accessories: Anvils, Roller Skates, Suction Cups, Dehydrated Boulders</li>
+        <li>Sale: Aspirin, Bird Seed, Invisible Paint</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h3 id="search-form-see-mocks-state-search-png-">Search Form (see <a href="#screenshot-search">mocks/state-search.png</a>)</h3>
+  <img src="./mocks/state-search-detail.png" alt="search detail"/>
+  <p>When typing in text in the header&#39;s search form (e.g. anvils, explosives, acme, etc.):</p>
+  <ol>
+    <li>An HTTP request should be made using a global variable named <code>searchUrl</code> for the URL (this is defined in json.js).</li>
+    <li>Filter the array of results (a JSON array of objects will be returned) by your search term.</li>
+    <li>The JSON array of objects will be in a format similar to: <br />
+      <code>
+<pre>[
+        { name: &#39;Product Name 1&#39; },
+        { name: &#39;Product Name 2&#39; },
+        { name: &#39;Product Name 3 }
+]</pre>
+      </code>
+    </li>
+    <li>It&#39;s up to you to decide if the text must match exactly, or if there&#39;s a partial match between your search term and the results, but rememeber that string comparisons in JavaScript are case-sensitive!</li>
+  </ol>
+
+  <h3 id="countdown-timer">Countdown Timer</h3>
+  <img src="./mocks/state-countdown-detail.png" alt="countdown detail"/>
+  <p>In the first banner&#39;s dynamite graphic, there&#39;s a placeholder to create a timer:</p>
+  <ol>
+    <li>Create a placeholder element in your HTML (this can be any HTML element, but keep semantics in mind).</li>
+    <li>In your JavaScript, generate a random number between 100 and 999 and assign it to a variable.</li>
+    <li>Every second decrement this variable and set its new value in the placeholder.</li>
+    <li>Once the timer hits zero, stop the countdown interval from running anymore.</li>
+    <li>Add some flair to your timer, once it hits zero play an explosion sound effect (we've provided one in the sounds directory: sounds/explosion.wav)</li>
+  </ol>
+
+  <h3 id="latest-products-hover-state-see-mocks-state-hover-png-">Latest Products Hover State (see <a href="#screenshot-hover">mocks/state-hover.png</a>)</h3>
+  <img src="./mocks/state-hover-detail.png" alt="hover detail"/>
+  <p>When hovering over either of the three latest products:</p>
+  <ol>
+    <li>The image should have some transparency (hint: it&#39;s 50% transparent)</li>
+    <li>And, the associated category name should be centered both vertically and horizontally</li>
+    <li>The categories are: Rockets, Bat Suits, and Explosives</li>
+    <li>Hint: This can be done with CSS and/or JavaScript.</li>
+  </ol>
+
+  <h2>Helpful Jumpstarters</h2>
+  <ul>
+    <li>The font used is: Helvetica, Arial, sans-serif at 16px</li>
+    <li>The header background color is: rgb(196, 196, 196)</li>
+    <li>The red color is: rgb(218, 55, 50)</li>
+    <li>The first banner&#39;s blue/grey color is: rgb(172, 194, 206)</li>
+    <li>The maximum width of the content area is 1024px</li>
+    <li>If making it to the responsive portion, the mobile breakpoint begins with the viewport is less than or equal to 650px.</li>
+  </ul>
+  <p>Since this is your foray into combining JavaScript with HTML and CSS to create truly interactive experiences, we&#39;ve provided some tips below:</p>
+
+  <h3>HTML</h3>
+  <ol>
+    <li>Prioritize the structure--it makes working with CSS and JavaScript much easier.</li>
+    <li>Utilize semantic HTML5 elements; i.e. use the correct tag/element for the type of content.</li>
+    <li>Keeping it simple is often the best solution!</li>
+    <li>Remember: a web page always needs a title!</li>
+  </ol>
+
+  <h3>CSS</h3>
+  <ol>
+    <li>We&#39;ve provided desktop and mobile mockups, so focus on the desktop version first.</li>
+    <li>Don&#39;t get too concerned with pixel-perfect spacing; we&#39;re looking for the overall layout and visuals.</li>
+    <li>If you&#39;re comfortable working with media queries, create a responsive layout that looks like the mobile.png screenshot.</li>
+  </ol>
+
+  <h3>JavaScript</h3>
+  <ol>
+    <li>Although this is your first foray into changing the page with Javascript, we&#39;ve provided resources below. </li>
+    <li>Even though Javascript manipulate a lot of the page, if you can build something in HTML or CSS, use those instead.</li>
+  </ol>
+
+  <h3>Resources</h3>
+  <ul>
+    <li>Introduction to the DOM: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction</a></li>
+    <li>Events and the DOM: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events">https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events</a></li>
+    <li>Making Webpages Interactive: <a href="https://www.khanacademy.org/computing/computer-programming/html-css-js#js-and-the-dom">https://www.khanacademy.org/computing/computer-programming/html-css-js#js-and-the-dom</a></li>
+    <li>Beginner&#39;s Guide to Media Queries: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries</a></li>
+    <li>Using Media Queries: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries</a></li>
+  </ul>
+
+  <h2>Screenshots</h2>
+
+  <h3 id="screenshot-desktop">Desktop</h3>
+  <p><img src="./mocks/desktop.png" alt="Desktop Screenshot" /></p>
+
+  <h3 id="screenshot-nav">Navigation</h3>
+  <p><img src="./mocks/state-nav.png" alt="Nav Screenshot" /></p>
+
+  <h3 id="screenshot-search">Search</h3>
+  <p><img src="./mocks/state-search.png" alt="Search Screenshot" /></p>
+
+  <h3 id="screenshot-hover">Hover</h3>
+  <p><img src="./mocks/state-hover.png" alt="Hover Screenshot" /></p>
+
+  <h3 id="screenshot-mobile">Mobile</h3>
+  <p><img src="./mocks/mobile.png" alt="Mobile Screenshot" /></p>
+</div>
+</body>

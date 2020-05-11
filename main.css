@@ -1,0 +1,856 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+.topBox {
+    background-color: rgb(196, 196, 196);
+    border-bottom-style: dotted;
+   
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    
+    
+}
+
+
+/*general container for layout. keeps max width at 1024px */
+.centerContainer {
+    max-width: 1024px;
+    margin:0 auto;
+
+}
+
+
+
+/*general container for layout. keeps max width at 1024px */
+.containerA {
+    max-width: 1024px;
+    margin:0 auto;
+/*
+    padding-left: 30px;
+    padding-right: 30px;
+*/
+ display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 40%;
+    grid-row-gap: 10px;
+    
+}
+
+
+.logoImage{
+    grid-area: 1/1/1/1;
+    justify-self: start;
+    align-self: start;
+    padding-top:5px;
+}
+
+
+
+
+/* shopping cart logo 3 divs, red box, then cart logo, then shopping cart words */ 
+ .shoppingCart {
+    background-color:  rgb(218, 55, 50);  
+    margin-top:10px;
+    width: 150px;
+    height: 35px;
+    color: white;
+    padding: 0px;
+    grid-area: 1/2/1/2;
+    justify-self: end;
+    align-self: start;
+    
+   }
+
+.cart{
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.words {display: inline-block;
+        position: relative;
+        bottom: 7px;
+        font-size: 16px;}
+
+
+
+/*NAV BAR  */
+nav {
+    grid-area: 2/1/2/1;
+    justify-self: start;
+    align-self: center;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:rgb(218, 55, 50);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color:rgb(218, 55, 50);
+}
+
+nav button:hover{
+     text-decoration: underline;
+    color:rgb(218, 55, 50);
+}
+
+
+/* EXPLOSIVES Dropdown Button */
+.dropbtn {
+  background-color: rgb(196, 196, 196);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: default;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: rgb(196, 196, 196);
+  min-width: 160px;
+  z-index: 1;
+  border-bottom-style: dashed;
+  border-right-style: dashed;
+  border-left-style: dashed;
+
+}
+
+.dropdown-content1 a {
+  color: black;
+  padding: 6px 10px ;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: rgb(196, 196, 196);
+  min-width: 160px;
+  z-index: 1;
+  border-bottom-style: dashed;
+  border-right-style: dashed;
+  border-left-style: dashed;
+
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 6px 10px ;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: rgb(196, 196, 196);
+  min-width: 160px;
+  z-index: 1;
+  border-bottom-style: dashed;
+  border-right-style: dashed;
+  border-left-style: dashed;
+
+}
+
+.dropdown-content3 a {
+  color: black;
+  padding: 6px 10px ;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+
+
+
+.show {display:block;}
+.noshow {display: none;}
+
+
+/* ACCESSORIES Dropdown Button */
+.dropbtn2 {
+  background-color: rgb(196, 196, 196);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: default;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* relative postion makes it so content placed right elow dropdown button ( position: absolute.)*/
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: rgb(196, 196, 196);
+  min-width: 160px;
+  z-index: 1;
+  border-bottom-style: dashed;
+  border-right-style: dashed;
+  border-left-style: dashed;
+
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 6px 10px ;
+  text-decoration: none;
+  display: block;
+}
+
+/*.show2 {display:block;}*/
+
+
+/* SALE Dropdown */
+.dropbtn3 {
+  background-color: rgb(196, 196, 196);
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: default;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+
+/* relative postion makes it so content placed right below dropdown button ( position: absolute.)*/
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  background-color: rgb(196, 196, 196);
+  min-width: 160px;
+  z-index: 1;
+  border-bottom-style: dashed;
+  border-right-style: dashed;
+  border-left-style: dashed;
+
+}
+
+.dropdown-content3 a {
+  color: black;
+  padding: 6px 10px ;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+
+
+/*SEARCH button*/
+
+
+
+
+
+
+
+/* ACME HOMEPAGE BANNER */
+
+section h1 {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+/*BLUE BANNER Below*/
+.blueBack{
+    background-color: rgb(172, 194, 206);
+}
+
+.blueBack div{
+    padding: 10px;
+   
+}
+
+.blueBack button{
+    margin:10px;
+    background-color:  rgb(218, 55, 50);  
+    margin-top:10px;
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.timer {
+  position:relative;
+  bottom: 146px;
+  left: 140px ;
+  color: red;
+  visibility: visible;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 35px
+    
+}
+
+
+
+
+
+
+
+/* big section with coyote chillen */
+.hero {margin-top: 15px;
+    background-image: url(images/hero.png);
+     background-repeat: no-repeat;
+    background-size:100%;
+    padding-bottom: 58.59%;
+    height: 0;
+    text-align: center;
+/*    max-height: 600px;*/
+    
+}
+
+
+div .whiteBox{
+    outline-color: black;
+    outline-style: dotted;
+    width: 260px;
+    height: 150px;
+    position:relative;
+    left: 71%;
+    top: 20px;
+    background-color: white;
+}
+
+.textHero{
+    position: relative;
+    top:15px;
+    left: 15px;
+    width: 240px;
+}
+
+
+.buttonHero{
+    padding: 10px;
+    background-color:  rgb(218, 55, 50);  
+    width: 100px;
+    height: auto;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    position:relative;
+    top: 10px;
+    
+}
+
+
+
+.whiteBox2{
+    display:none;
+}
+
+
+
+
+
+
+
+
+/* HOVER PHOTOS*/
+
+.photos  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    overflow:hidden;
+    position: relative;
+   
+    
+}
+
+.photos figure img{
+   max-width: 330px;
+    
+}
+
+.middle{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+/*hover opacity and text*/
+
+.rocketWrap {
+  position: relative;
+  height: 270px;
+  width: 330px;
+    
+}
+
+.rocketPicText {
+  position:absolute;
+  top: 120px;
+  right: 135px;
+  color: black;
+  visibility: visible;
+  opacity: 0;
+  font-weight: bold;
+}
+
+.rocketWrap:hover .rocketPicText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.rocketWrap:hover .rocketPic {
+    opacity: 0.5;
+}
+
+
+
+.batWrap {
+  position: relative;
+  height:  270px;
+  width: 360px;
+    
+}
+
+.middlePicText {
+  position:absolute;
+  top: 120px;
+  right: 145px;
+  color: black;
+  visibility: visible;
+  opacity: 0;
+  font-weight: bold;
+}
+
+.batWrap:hover .middlePicText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.batWrap:hover .middle {
+    opacity: 0.5;
+}
+
+
+
+
+
+.explosivesWrap {
+  position: relative;
+  height:  270px;
+  width: 330px;
+    
+}
+
+.explosivesPicText {
+  position:absolute;
+  top: 120px;
+  right: 125px;
+  color: black;
+  visibility: visible;
+  opacity: 0;
+  font-weight: bold;
+}
+
+.explosivesWrap:hover .explosivesPicText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.explosivesWrap:hover .explosivesPic {
+    opacity: 0.5;
+}
+
+
+
+
+
+/*
+
+
+
+
+
+
+.middle:hover{
+    opacity: 0.5;
+
+}
+
+.explosivesPic:hover{
+    opacity: 0.5;
+
+    
+}
+
+
+
+.rocketPicText:hover{
+   position: absolute;
+  top: 50%;
+  text-align: center;
+
+  
+}
+
+.middleText:hover{
+  opacity: 0.5;
+   transform: translateY(40px)
+}
+
+.explosivesPicText:hover{
+    opacity: 0.5;
+    transform: translateY(40px)
+    
+}
+
+
+
+*/
+
+
+
+
+
+/* footer */
+
+
+footer {
+    background-color: rgb(196, 196, 196);
+    border-top-style: dotted;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/*@MEDIA */
+
+
+@media screen and (max-width: 650px) {
+
+    
+    
+    
+    .centerContainer{
+    max-width: 90%;
+  
+    }
+    
+    
+    .notOnPhone {
+        display: none;
+    }
+    
+    
+.hero {
+    background-image: url(images/hero.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    padding-bottom: 58.59%;
+    height: 0;
+    text-align: center;
+    margin-top: 1px;
+
+    
+}
+
+    
+  div .whiteBox{
+    display:none;
+    align-content: center;
+    position: relative;
+    margin-top: 1px;
+    
+}
+
+ .whiteBox2{
+    display:block;
+    outline-color: black;
+    outline-style: dotted;
+    width: 89%;
+    height: 150px;
+    background-color: white;
+    box-sizing: content-box;
+    }
+
+
+
+.textHero2{
+    position: relative;
+    top:15px;
+    left: 15px;
+    width: 240px;
+}
+
+
+.buttonHero2{
+    padding: 10px;
+    background-color:  rgb(218, 55, 50);  
+    width: 100px;
+    height: auto;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    position:relative;
+    top: 10px;
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+.containerA {
+    max-width: 1024px;
+    margin:0 auto;
+/*
+    padding-left: 30px;
+    padding-right: 30px;
+*/
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+    
+}
+
+
+.logoImage{
+    
+    justify-self: start;
+    align-self: start;
+    padding-top:5px;
+    order: 0;
+}
+    
+
+nav {
+
+    justify-self: start;
+    align-self: center;
+    font-family: "Helvetica", "Arial", sans-serif;
+    order: 4;
+}
+
+
+ 
+
+    
+   
+ .shoppingCart {
+    background-color:  rgb(218, 55, 50);  
+    margin-top:10px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    padding: 0px;
+   
+    justify-self: end;
+    align-self: start;
+    order: 2;
+    
+   }
+
+.cart{
+    margin-top: 5px;
+    
+}
+
+.words {display: none;
+        position: relative;
+        }   
+    
+    
+    
+    
+form.search{
+  
+    justify-self: end;
+    align-self: center;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    order:3;
+}
+
+input {
+    height:20px;
+}
+
+form button {
+    border-style: solid;
+    border-color: black;
+    height: 20px;
+    width: 70px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: black;
+    color:white;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+} 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+.autocomplete {
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  width: 160px;
+}
+
+
+.myInput2 {
+  
+   background-color: rgb(196, 196, 196);
+  
+   
+    width: 180px;
+    position:absolute;
+    z-index: 99; 
+    border-style: dotted;
+    border-top-style:none; 
+    
+
+  
+  
+}
+
+
+.myInput2 div {
+  
+  background-color: rgb(196, 196, 196);
+  font-size: 15px;
+  width:170px;
+  padding: 5px;
+  display: block;
+  
+}
+
+.myInput2 div:hover{
+  background-color: teal;
+
+  cursor: pointer;
+}
+
+
+
+form.search{
+  grid-area: 2/2/2/2;
+  justify-self: end;
+  align-self: center; 
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px; 
+}
+
+
+form button {
+  border-style: solid;
+  border-color: black;
+  height: 20px;
+  width: 70px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  background-color: black;
+  color:white;
+}
+
+
+
+
+
+
+
+/*
+The font used is: Helvetica, Arial, sans-serif at 16px
+The header background color is: rgb(196, 196, 196)
+The red color is: rgb(218, 55, 50)
+The first banner's blue/grey color is: rgb(172, 194, 206)
+The maximum width of the content area is 1024px
+If making it to the responsive portion, the mobile breakpoint begins with the viewport is less than or equal to 650px.*/
+
+
+/*grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end. */
+
+
